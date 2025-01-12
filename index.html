@@ -404,6 +404,10 @@ No.   Date      By                Log
 			document.querySelectorAll('input, textarea').forEach(element => {
 				element.addEventListener('input', generateFooter);
 			});
+			
+			document.querySelectorAll('input, textarea').forEach(element => {
+				element.addEventListener('click', () => element.select());
+            });
 		</script>
 	</body>
 </html>
